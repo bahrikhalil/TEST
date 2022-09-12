@@ -1,0 +1,4 @@
+from openjdk:17
+add target/docker_app.jar docker_app.jar
+expose 8085
+entrypoint ["java","-jar","docker_app.jar"]
